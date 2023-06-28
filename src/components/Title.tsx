@@ -1,4 +1,4 @@
-import Styles from "../../styles/components/Title.module.css";
+import Styles from "../styles/components/Title.module.css";
 
 export interface TitleProps {}
 
