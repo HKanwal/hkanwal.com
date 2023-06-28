@@ -1,0 +1,32 @@
+.title-container {
+  font-size: 3em;
+}
+
+.name-container {
+  opacity: 0;
+  animation: fade-in 1s ease 0.1s forwards;
+}
+
+.firstname {
+  color: #2c7fbe;
+}
+
+.subtitle {
+  display: block;
+  color: #777;
+  font-size: 0.5em;
+  opacity: 0;
+  animation: fade-in 1s ease 0.3s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
