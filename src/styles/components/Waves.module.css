@@ -1,0 +1,24 @@
+.waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.front-wave {
+  animation: wave 10s linear forwards infinite;
+}
+
+.back-wave {
+  animation: wave 4s linear forwards infinite;
+}
+
+@keyframes wave {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(176px);
+  }
+}
