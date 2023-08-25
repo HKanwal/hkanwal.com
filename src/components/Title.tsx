@@ -10,7 +10,9 @@ export function Title(props: TitleProps) {
         &nbsp;
         <span>Kanwal</span>
       </div>
-      <span className={Styles.subtitle}>A Full-Stack Developer</span>
+      <span className={Styles.subtitle}>
+        The Web Developer you are looking for
+      </span>
     </div>
   );
 }
