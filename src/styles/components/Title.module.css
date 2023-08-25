@@ -1,5 +1,5 @@
 .title-container {
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
