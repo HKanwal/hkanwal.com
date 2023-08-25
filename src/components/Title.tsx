@@ -5,11 +5,9 @@ export interface TitleProps {}
 export function Title(props: TitleProps) {
   return (
     <div className={Styles["title-container"]}>
-      <div className={Styles["name-container"]}>
-        <span className={Styles.firstname}>Harkeerat</span>
-        &nbsp;
-        <span>Kanwal</span>
-      </div>
+      <span className={Styles.name}>
+        <em>Harkeerat</em> Kanwal
+      </span>
       <span className={Styles.subtitle}>
         The Web Developer you are looking for
       </span>
