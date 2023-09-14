@@ -1,16 +1,14 @@
-import Styles from "../styles/components/Title.module.css";
+import Styles from '../styles/components/Title.module.css';
 
 export interface TitleProps {}
 
 export function Title(props: TitleProps) {
   return (
-    <div className={Styles["title-container"]}>
+    <div className={Styles['title-container']}>
       <span className={Styles.name}>
         <em>Harkeerat</em> Kanwal
       </span>
-      <span className={Styles.subtitle}>
-        The Web Developer you are looking for
-      </span>
+      <span className={Styles.subtitle}>The developer you are looking for</span>
     </div>
   );
 }
