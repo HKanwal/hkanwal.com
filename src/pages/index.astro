@@ -10,22 +10,7 @@ import { AppearingText } from '../components/AppearingText';
     <Title />
     <Waves height='500px' />
     <div id='brief'>
-      <AppearingText text='Websites, ' delay={0} client:visible />
-      <AppearingText text='apps, ' delay={800} client:visible />
-      <AppearingText text='mods, ' delay={1600} client:visible />
-      <AppearingText text='crypto, ' delay={2400} client:visible />
-      <AppearingText text='and ' delay={3000} client:visible />
-      <AppearingText text='more.' delay={3400} client:visible />
-      <br />
-      <AppearingText text='If ' delay={4400} client:visible />
-      <AppearingText text='you ' delay={4800} client:visible />
-      <AppearingText text='can ' delay={5200} client:visible />
-      <AppearingText text='imagine ' delay={5600} client:visible />
-      <AppearingText text='it, ' delay={6000} client:visible />
-      <AppearingText text='I ' delay={6800} client:visible />
-      <AppearingText text='can ' delay={7200} client:visible />
-      <AppearingText text='build ' delay={7600} client:visible />
-      <AppearingText text='it.' delay={8000} client:visible />
+      Websites, apps, mods, crypto, and more. If you can imagine it, I can build it.
     </div>
     <div id='content'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius dapibus mi ut mattis.
@@ -46,6 +31,21 @@ import { AppearingText } from '../components/AppearingText';
     </div>
   </div>
 </Layout>
+
+<script>
+  let canScroll = false;
+
+  setTimeout(() => {
+    canScroll = true;
+    console.log('can scroll now');
+  }, 4000);
+
+  window.onscroll = (e) => {
+    if (!canScroll) {
+      window.scrollTo(0, 0);
+    }
+  };
+</script>
 
 <style>
   #page {
