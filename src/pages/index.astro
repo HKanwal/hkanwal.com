@@ -1,34 +1,16 @@
 ---
+import { Brief } from '../components/Brief';
 import { Title } from '../components/Title';
 import { Waves } from '../components/Waves';
 import Layout from '../layouts/Layout.astro';
-import { AppearingText } from '../components/AppearingText';
 ---
 
 <Layout title='hkanwal.com'>
   <div id='page'>
     <Title />
     <Waves height='500px' />
-    <div id='brief'>
-      Websites, apps, mods, crypto, and more. If you can imagine it, I can build it.
-    </div>
-    <div id='content'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius dapibus mi ut mattis.
-      Sed semper urna ipsum, sit amet condimentum ante tristique a. Aenean euismod ultricies velit
-      et convallis. Etiam ut accumsan odio. Sed interdum porttitor mauris ut volutpat. Sed at ante
-      condimentum, maximus sapien non, euismod magna. Pellentesque sit amet augue in magna
-      ullamcorper blandit sit amet eget nunc. Vestibulum lacus odio, feugiat maximus rhoncus
-      imperdiet, egestas quis arcu. Vivamus congue sem ac vulputate consectetur. Vivamus lacinia
-      elit molestie, ultricies lacus sed, porttitor elit. Aenean ullamcorper turpis nec ligula
-      viverra vulputate. Cras vel eros ac mi ornare iaculis non et nisl. Maecenas posuere et turpis
-      at rhoncus. Sed convallis, nisi et vehicula pretium, dui nulla euismod eros, ut scelerisque
-      erat elit in risus. Suspendisse eget sapien rutrum, rutrum mi sit amet, luctus tellus.
-      Curabitur pellentesque metus aliquet, egestas quam vel, finibus ligula. Nunc cursus quam in
-      risus tristique, quis congue nisl posuere. Cras blandit a lorem vitae viverra. Nunc nunc
-      velit, tincidunt ut velit sit amet, dignissim lacinia felis. Maecenas non urna enim. Nam
-      mattis consectetur justo, in cursus ligula lobortis ac. Morbi luctus ante in consequat tempor.
-      Integer nec bibendum
-    </div>
+    <div id='underwater'></div>
+    <Brief client:visible />
   </div>
 </Layout>
 
@@ -59,20 +41,11 @@ import { AppearingText } from '../components/AppearingText';
     margin: auto;
   }
 
-  #brief {
+  #underwater {
     margin-top: 98vh;
-    padding-top: 40vh;
+    padding-top: 2000vh;
     background-color: #32bafa;
-    color: white;
     width: 100%;
     z-index: 2;
-    font-size: 64px;
   }
-
-  #content {
-    padding-top: 80vh;
-    width: 100%;
-    z-index: 2;
-    background-color: #32bafa;
-  }
-</style>../components/WordByWord
+</style>

@@ -1,0 +1,7 @@
+.brief {
+  position: absolute;
+  top: 150vh;
+  z-index: 3;
+  color: white;
+  font-size: 64px;
+}
